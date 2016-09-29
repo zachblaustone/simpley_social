@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A22E65D41D9D9DB000B7A40C /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22E65D31D9D9DB000B7A40C /* MaterialView.swift */; };
+		A22E65D71D9D9E3500B7A40C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22E65D61D9D9E3500B7A40C /* Constants.swift */; };
+		A22E65D91D9D9FC700B7A40C /* Meterial Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22E65D81D9D9FC700B7A40C /* Meterial Button.swift */; };
+		A22E65DB1D9DA18600B7A40C /* MaterialText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22E65DA1D9DA18600B7A40C /* MaterialText.swift */; };
+		A22E65DD1D9DA2EE00B7A40C /* MaterialLongButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22E65DC1D9DA2EE00B7A40C /* MaterialLongButton.swift */; };
 		A27381771D9C857600A62A4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27381761D9C857600A62A4E /* AppDelegate.swift */; };
 		A27381791D9C857600A62A4E /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27381781D9C857600A62A4E /* SigninVC.swift */; };
 		A273817C1D9C857600A62A4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A273817A1D9C857600A62A4E /* Main.storyboard */; };
@@ -20,6 +25,11 @@
 		3EE3E54234A131F8AAE9339B /* Pods-simpley_social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simpley_social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-simpley_social/Pods-simpley_social.debug.xcconfig"; sourceTree = "<group>"; };
 		82D2C56A226DC1821214EAF9 /* Pods-simpley_social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simpley_social.release.xcconfig"; path = "Pods/Target Support Files/Pods-simpley_social/Pods-simpley_social.release.xcconfig"; sourceTree = "<group>"; };
 		87B241C852D7B26BC0513099 /* Pods_simpley_social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_simpley_social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A22E65D31D9D9DB000B7A40C /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		A22E65D61D9D9E3500B7A40C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A22E65D81D9D9FC700B7A40C /* Meterial Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Meterial Button.swift"; sourceTree = "<group>"; };
+		A22E65DA1D9DA18600B7A40C /* MaterialText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialText.swift; sourceTree = "<group>"; };
+		A22E65DC1D9DA2EE00B7A40C /* MaterialLongButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialLongButton.swift; sourceTree = "<group>"; };
 		A27381731D9C857600A62A4E /* simpley_social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpley_social.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27381761D9C857600A62A4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A27381781D9C857600A62A4E /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
@@ -51,6 +61,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A22E65D51D9D9E2400B7A40C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A22E65D61D9D9E3500B7A40C /* Constants.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		A273816A1D9C857600A62A4E = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +90,7 @@
 		A27381751D9C857600A62A4E /* simpley_social */ = {
 			isa = PBXGroup;
 			children = (
+				A22E65D51D9D9E2400B7A40C /* Util */,
 				A2E9A5991D9C88F80081B104 /* Model */,
 				A2E9A5981D9C88F60081B104 /* View */,
 				A2E9A5971D9C88EC0081B104 /* Controller */,
@@ -96,6 +115,10 @@
 		A2E9A5981D9C88F60081B104 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A22E65D31D9D9DB000B7A40C /* MaterialView.swift */,
+				A22E65D81D9D9FC700B7A40C /* Meterial Button.swift */,
+				A22E65DA1D9DA18600B7A40C /* MaterialText.swift */,
+				A22E65DC1D9DA2EE00B7A40C /* MaterialLongButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -240,8 +263,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A22E65D41D9D9DB000B7A40C /* MaterialView.swift in Sources */,
 				A27381791D9C857600A62A4E /* SigninVC.swift in Sources */,
+				A22E65D91D9D9FC700B7A40C /* Meterial Button.swift in Sources */,
+				A22E65DD1D9DA2EE00B7A40C /* MaterialLongButton.swift in Sources */,
+				A22E65DB1D9DA18600B7A40C /* MaterialText.swift in Sources */,
 				A27381771D9C857600A62A4E /* AppDelegate.swift in Sources */,
+				A22E65D71D9D9E3500B7A40C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
