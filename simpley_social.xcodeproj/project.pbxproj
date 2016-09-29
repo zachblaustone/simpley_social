@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		A27381771D9C857600A62A4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27381761D9C857600A62A4E /* AppDelegate.swift */; };
-		A27381791D9C857600A62A4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27381781D9C857600A62A4E /* ViewController.swift */; };
+		A27381791D9C857600A62A4E /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27381781D9C857600A62A4E /* SigninVC.swift */; };
 		A273817C1D9C857600A62A4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A273817A1D9C857600A62A4E /* Main.storyboard */; };
 		A273817E1D9C857600A62A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A273817D1D9C857600A62A4E /* Assets.xcassets */; };
 		A27381811D9C857600A62A4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A273817F1D9C857600A62A4E /* LaunchScreen.storyboard */; };
+		A27381891D9C85D700A62A4E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A27381881D9C85D700A62A4E /* GoogleService-Info.plist */; };
+		D2E674DBD333C4A9274DFD95 /* Pods_simpley_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B241C852D7B26BC0513099 /* Pods_simpley_social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3EE3E54234A131F8AAE9339B /* Pods-simpley_social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simpley_social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-simpley_social/Pods-simpley_social.debug.xcconfig"; sourceTree = "<group>"; };
+		82D2C56A226DC1821214EAF9 /* Pods-simpley_social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simpley_social.release.xcconfig"; path = "Pods/Target Support Files/Pods-simpley_social/Pods-simpley_social.release.xcconfig"; sourceTree = "<group>"; };
+		87B241C852D7B26BC0513099 /* Pods_simpley_social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_simpley_social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27381731D9C857600A62A4E /* simpley_social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpley_social.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27381761D9C857600A62A4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A27381781D9C857600A62A4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A27381781D9C857600A62A4E /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
 		A273817B1D9C857600A62A4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A273817D1D9C857600A62A4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A27381801D9C857600A62A4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A27381821D9C857600A62A4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A27381881D9C85D700A62A4E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2E674DBD333C4A9274DFD95 /* Pods_simpley_social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49B5BEB15469755E17757833 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3EE3E54234A131F8AAE9339B /* Pods-simpley_social.debug.xcconfig */,
+				82D2C56A226DC1821214EAF9 /* Pods-simpley_social.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A273816A1D9C857600A62A4E = {
 			isa = PBXGroup;
 			children = (
 				A27381751D9C857600A62A4E /* simpley_social */,
 				A27381741D9C857600A62A4E /* Products */,
+				49B5BEB15469755E17757833 /* Pods */,
+				CE45682CF72E9E064FD4C59F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +72,47 @@
 		A27381751D9C857600A62A4E /* simpley_social */ = {
 			isa = PBXGroup;
 			children = (
+				A2E9A5991D9C88F80081B104 /* Model */,
+				A2E9A5981D9C88F60081B104 /* View */,
+				A2E9A5971D9C88EC0081B104 /* Controller */,
 				A27381761D9C857600A62A4E /* AppDelegate.swift */,
-				A27381781D9C857600A62A4E /* ViewController.swift */,
 				A273817A1D9C857600A62A4E /* Main.storyboard */,
 				A273817D1D9C857600A62A4E /* Assets.xcassets */,
 				A273817F1D9C857600A62A4E /* LaunchScreen.storyboard */,
 				A27381821D9C857600A62A4E /* Info.plist */,
+				A27381881D9C85D700A62A4E /* GoogleService-Info.plist */,
 			);
 			path = simpley_social;
+			sourceTree = "<group>";
+		};
+		A2E9A5971D9C88EC0081B104 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A27381781D9C857600A62A4E /* SigninVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A2E9A5981D9C88F60081B104 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A2E9A5991D9C88F80081B104 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CE45682CF72E9E064FD4C59F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87B241C852D7B26BC0513099 /* Pods_simpley_social.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A27381851D9C857600A62A4E /* Build configuration list for PBXNativeTarget "simpley_social" */;
 			buildPhases = (
+				B6933ACC429196D7B163F36C /* [CP] Check Pods Manifest.lock */,
 				A273816F1D9C857600A62A4E /* Sources */,
 				A27381701D9C857600A62A4E /* Frameworks */,
 				A27381711D9C857600A62A4E /* Resources */,
+				7DED0F6DCACEC164A4414314 /* [CP] Embed Pods Frameworks */,
+				ABB4A3F37FE483D1B2F59A8A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A27381811D9C857600A62A4E /* LaunchScreen.storyboard in Resources */,
+				A27381891D9C85D700A62A4E /* GoogleService-Info.plist in Resources */,
 				A273817E1D9C857600A62A4E /* Assets.xcassets in Resources */,
 				A273817C1D9C857600A62A4E /* Main.storyboard in Resources */,
 			);
@@ -132,12 +187,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7DED0F6DCACEC164A4414314 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-simpley_social/Pods-simpley_social-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABB4A3F37FE483D1B2F59A8A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-simpley_social/Pods-simpley_social-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6933ACC429196D7B163F36C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A273816F1D9C857600A62A4E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A27381791D9C857600A62A4E /* ViewController.swift in Sources */,
+				A27381791D9C857600A62A4E /* SigninVC.swift in Sources */,
 				A27381771D9C857600A62A4E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +362,7 @@
 		};
 		A27381861D9C857600A62A4E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EE3E54234A131F8AAE9339B /* Pods-simpley_social.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PRQA2G3A8L;
@@ -272,6 +376,7 @@
 		};
 		A27381871D9C857600A62A4E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82D2C56A226DC1821214EAF9 /* Pods-simpley_social.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PRQA2G3A8L;
@@ -302,6 +407,7 @@
 				A27381871D9C857600A62A4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
