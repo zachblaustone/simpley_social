@@ -19,6 +19,10 @@ class SigninVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func facebookBtnTapped(_ sender: AnyObject) {
+        
+        
+    }
 
 
 }
