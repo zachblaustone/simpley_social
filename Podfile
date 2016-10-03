@@ -2,11 +2,16 @@
 # platform :ios, '9.0'
 
 target 'simpley_social' do
+
   use_frameworks!
+  
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  pod 'FacebookShare'
 
 
 
